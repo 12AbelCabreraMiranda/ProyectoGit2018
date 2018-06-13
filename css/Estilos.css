@@ -1,0 +1,222 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Tablets*/
+@media (max-width: 1024px) and (min-width: 768px){
+ /*ESTILOS PARA TABLETS DISPONIBLES*/
+    
+body{
+    font-family: 'Open sans';
+    /*background: #e8e8e8;*/
+}
+.hea{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    padding: 20px;
+    background: #34495e96;
+    position: absolute;
+}
+.hea #button-menu{
+    font-size: 30px;
+    color: #fff;
+    cursor: pointer;/*Se coloca para que cuando pase el mause encima se muestre la manita*/
+}
+.navegacion{ /*abarca todo lo que es el alto de la pagina*/
+    position: absolute;
+    top: 100%; /*se sale del header, se coloca debajo de su padre al darle 100%*/
+    left: 0;
+    width: 0%;
+    height: 100vh;/*para que abarque toda la pantalla*/
+    background: rgba(0,0,0,.0);/*color transparente*/
+    
+}
+.navegacion #UlMenu1, #UlMenu2, #UlMenu3{ /*abarca el 100% de su padre que es navegacion*/
+    width: 320px;
+    height: 100%;
+    background: white;
+    list-style: none; /*quita los estilos de lista*/
+    position: absolute;
+    top: 0;
+    left: -320px;
+    transition: left .3s;
+}
+.navegacion .menu li.title-menu{
+    padding: 20px;
+    background: #5f6f81;
+    color: #fff;
+    text-align: center;
+    font-size: 22px;
+}
+.navegacion .menu a{
+    display: block;
+    padding: 20px;
+    border-bottom: 1px solid #c6d0da;
+    font-size: 22px;
+    font-weight: 200;
+    text-decoration: none;
+    color: #575d69;
+}
+.navegacion .menu a:hover{
+    background: #798DA3;
+    color: #fff;
+}
+
+.navegacion .menu li span.icon-menu{
+    margin-right: 12px;/*Separacion de los iconos con el texto*/
+}
+.navegacion .menu .item-submenu > a::after{ 
+    font: normal normal normal 14px/1 FontAwesome;/*se copia de: font-awesome.css*/
+    font-size: inherit;/*se copia de: font-awesome.css*/
+    text-rendering: auto;/*se copia de: font-awesome.css*/
+    -webkit-font-smoothing: antialiased;/*se copia de: font-awesome.css*/
+    -moz-osx-font-smoothing: grayscale;/*se copia de: font-awesome.css*/
+    content: '\f105';/*se copia de: font-awesome.css 912*/
+    float: right;/*mandar las flechas a la derecha*/
+}
+/*SUBMENUS*/
+.navegacion .submenu li.title-menu{
+  background: #fff;
+  color: #575d69;
+}
+.navegacion .submenu li.go-back{
+    padding: 10px 20px;
+    background: #5f6f81;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+}
+.navegacion .submenu li.go-back::before{/*codigos ATRAS de los submenus y FLECHAS respectivas*/  
+    font: normal normal normal 14px/1 FontAwesome;/*se copia de: font-awesome.css*/
+    font-size: inherit;/*se copia de: font-awesome.css*/
+    text-rendering: auto;/*se copia de: font-awesome.css*/
+    -webkit-font-smoothing: antialiased;/*se copia de: font-awesome.css*/
+    -moz-osx-font-smoothing: grayscale;/*se copia de: font-awesome.css*/  
+    content: '\f0d9';
+    margin-right: 10px;
+}
+/*RESPONSIVE*/
+@media screen and (max-width: 320px){
+    .navegacion ul{
+        width: 100%;
+    }
+}
+section #imagen{
+    width: 100%;
+    padding-top: 70px;
+}
+}
+
+/*-------------------------- CODIGO DISPONIBLES PARA iPhones------------------------------*/
+@media (max-width: 767px){
+
+    
+body{
+    font-family: 'Open sans';
+    /*background: #e8e8e8;*/
+}
+.hea{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    padding: 20px;
+    background: #34495e96;
+    position: absolute;
+}
+.hea #button-menu{
+    font-size: 30px;
+    color: #fff;
+    cursor: pointer;/*Se coloca para que cuando pase el mause encima se muestre la manita*/
+}
+.navegacion{ /*abarca todo lo que es el alto de la pagina*/
+    position: absolute;
+    top: 100%; /*se sale del header, se coloca debajo de su padre al darle 100%*/
+    left: 0;
+    width: 0%;
+    height: 100vh;/*para que abarque toda la pantalla*/
+    background: rgba(0,0,0,.0);/*color transparente*/
+    
+}
+.navegacion #UlMenu1, #UlMenu2, #UlMenu3{ /*abarca el 100% de su padre que es navegacion*/
+    width: 320px;
+    height: 100%;
+    background: white;
+    list-style: none; /*quita los estilos de lista*/
+    position: absolute;
+    top: 0;
+    left: -320px;
+    transition: left .3s;
+}
+.navegacion .menu li.title-menu{
+    padding: 20px;
+    background: #5f6f81;
+    color: #fff;
+    text-align: center;
+    font-size: 22px;
+}
+.navegacion .menu a{
+    display: block;
+    padding: 20px;
+    border-bottom: 1px solid #c6d0da;
+    font-size: 22px;
+    font-weight: 200;
+    text-decoration: none;
+    color: #575d69;
+}
+.navegacion .menu a:hover{
+    background: #798DA3;
+    color: #fff;
+}
+
+.navegacion .menu li span.icon-menu{
+    margin-right: 12px;/*Separacion de los iconos con el texto*/
+}
+.navegacion .menu .item-submenu > a::after{ 
+    font: normal normal normal 14px/1 FontAwesome;/*se copia de: font-awesome.css*/
+    font-size: inherit;/*se copia de: font-awesome.css*/
+    text-rendering: auto;/*se copia de: font-awesome.css*/
+    -webkit-font-smoothing: antialiased;/*se copia de: font-awesome.css*/
+    -moz-osx-font-smoothing: grayscale;/*se copia de: font-awesome.css*/
+    content: '\f105';/*se copia de: font-awesome.css 912*/
+    float: right;/*mandar las flechas a la derecha*/
+}
+/*SUBMENUS*/
+.navegacion .submenu li.title-menu{
+  background: #fff;
+  color: #575d69;
+}
+.navegacion .submenu li.go-back{
+    padding: 10px 20px;
+    background: #5f6f81;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+}
+.navegacion .submenu li.go-back::before{/*codigos ATRAS de los submenus y FLECHAS respectivas*/  
+    font: normal normal normal 14px/1 FontAwesome;/*se copia de: font-awesome.css*/
+    font-size: inherit;/*se copia de: font-awesome.css*/
+    text-rendering: auto;/*se copia de: font-awesome.css*/
+    -webkit-font-smoothing: antialiased;/*se copia de: font-awesome.css*/
+    -moz-osx-font-smoothing: grayscale;/*se copia de: font-awesome.css*/  
+    content: '\f0d9';
+    margin-right: 10px;
+}
+/*RESPONSIVE*/
+@media screen and (max-width: 320px){
+    .navegacion ul{
+        width: 100%;
+    }
+}
+section #imagen{
+    width: 100%;
+    padding-top: 70px;
+}
+
+}
+/* CODIGOS DE ESTILOS DE LA BARRA LATERAL*/
+
